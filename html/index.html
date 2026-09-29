@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8"> 
-    <title>Templates JavaScript</title> 
-</head> 
-<body> 
-    
-    <h1>Lista de pessoas</h1> 
+    <meta charset="UTF-8">
+    <title>Templates JavaScript</title>
+</head>
+<body>
 
-    <button id="botao">Clique aqui</button> 
+    <h1>Lista de pessoas</h1>
 
-    <p id="mensagem"></p> 
+    <button id="botao" type="button">Clique aqui</button>
 
-    <form id="formulario"> 
-        <label>Nome:</label> 
-        <input type="text" id="nome"> 
-        <button type="submit">Enviar</button> 
-    </form> 
+    <p id="mensagem" aria-live="polite"></p>
 
-    <div id="lista"></div> 
+    <form id="formulario">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome">
+        <button type="submit">Enviar</button>
+    </form>
+
+    <div id="lista"></div>
 
     <script type="module" src="../js/script.js"></script>
-</body> 
+</body>
 </html>
