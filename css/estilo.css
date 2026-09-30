@@ -53,3 +53,10 @@ input {
 footer {
     margin-top: 40px;
 }
+
+a:focus,
+button:focus,
+input:focus {
+    outline: 3px solid black;
+    outline-offset: 2px;
+}
