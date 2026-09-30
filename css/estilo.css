@@ -5,6 +5,8 @@ html {
 body {
     font-family: Arial, sans-serif;
     margin: 30px;
+    background-color: white;
+    color: black;
 }
 
 header {
@@ -17,6 +19,7 @@ nav {
 
 nav a {
     margin-right: 15px;
+    color: #003366;
     text-decoration: none;
 }
 
@@ -31,11 +34,17 @@ main {
 button {
     margin-top: 10px;
     padding: 8px 12px;
+    background-color: #003366;
+    color: white;
+    border: 2px solid #003366;
 }
 
 input {
     padding: 8px;
     margin-left: 5px;
+    color: black;
+    background-color: white;
+    border: 1px solid black;
 }
 
 #mensagem {
@@ -57,6 +66,36 @@ footer {
 a:focus,
 button:focus,
 input:focus {
-    outline: 3px solid black;
+    outline: 3px solid #000000;
     outline-offset: 2px;
+}
+
+/* Modo escuro */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #121212;
+        color: white;
+    }
+
+    nav a {
+        color: #66b3ff;
+    }
+
+    button {
+        background-color: #66b3ff;
+        color: #000000;
+        border-color: #66b3ff;
+    }
+
+    input {
+        background-color: #222222;
+        color: white;
+        border-color: white;
+    }
+
+    a:focus,
+    button:focus,
+    input:focus {
+        outline-color: white;
+    }
 }
